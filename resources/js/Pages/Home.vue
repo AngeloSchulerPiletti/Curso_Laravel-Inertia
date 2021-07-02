@@ -1,6 +1,6 @@
 <template>
-  <app-public>
-      <h1>Sobre</h1>
+    <app-public>
+      <h1>Home</h1>
   </app-public>
 </template>
 

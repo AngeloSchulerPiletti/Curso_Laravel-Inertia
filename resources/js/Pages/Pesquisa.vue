@@ -1,6 +1,6 @@
 <template>
   <app-public>
-      <h1>Sobre</h1>
+      <h1>Pesquisa</h1>
   </app-public>
 </template>
 

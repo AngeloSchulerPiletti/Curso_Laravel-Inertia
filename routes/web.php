@@ -18,18 +18,25 @@ use App\Http\Controllers\RoutesController;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('Home');
 })->name('casa');
 
+Route::get('/sobre', function () {
+    return Inertia::render('Sobre');
+})->name('sobre.show');
 
-Route::middleware('mineauth')->get('/about', [RoutesController::class, 'sobre']);
+Route::get('/receitas', function () {
+    return Inertia::render('Receitas');
+})->name('receitas.show');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+Route::get('/pesquisa', function () {
+    return Inertia::render('Pesquisa');
+})->name('pesquisa.show');
+
+
+// Route::middleware('mineauth')->get('/about', [RoutesController::class, 'sobre']);
+
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->name('dashboard');
 

@@ -1,5 +1,7 @@
 <template>
-  <h1>Footer</h1>
+  <footer>
+    <p>Copyright, all rights reserved</p>
+  </footer>
 </template>
 
 <script>
@@ -8,6 +10,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+footer{
+  background-color: $brown1;
+}
 </style>

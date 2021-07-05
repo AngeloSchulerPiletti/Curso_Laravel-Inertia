@@ -1,1 +1,11 @@
-@import './colors';
+@import "./colors";
+@import "./fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+p{
+    @include Fonte2;
+}

@@ -40,3 +40,5 @@ Route::get('/pesquisa', function () {
 //     return Inertia::render('Dashboard');
 // })->name('dashboard');
 
+
+require_once __DIR__ . '/fortify.php';

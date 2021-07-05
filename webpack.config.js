@@ -1,11 +1,6 @@
 const path = require('path');
 
 module.exports = {
-    resolve: {
-        alias: {
-            '@': path.resolve('resources/js'),
-        },
-    },
     module: {
         rules: [
           {
@@ -17,11 +12,16 @@ module.exports = {
                   // you can also read from a file, e.g. `variables.scss`
                   // use `prependData` here if sass-loader version = 8, or
                   // `data` if sass-loader version < 8
-                  additionalData: `@import "resources/css/sass/allImports.scss";`
+                  additionalData: `@import "resources/css/sass/allImports.scss";`,
                 }
               }
             ]
           }
         ]
       },
+    resolve: {
+        alias: {
+            '@': path.resolve('resources/js'),
+        },
+    },
 };
